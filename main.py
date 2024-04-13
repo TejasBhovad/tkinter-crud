@@ -38,7 +38,7 @@ class Table:
                 self.e.insert(END, lst[i][j])
                 self.e.config(state='readonly')
 
-        # update the scrollregion after the canvas and table_frame have been modified
+        # update the scroll region after the canvas and table_frame have been modified
         self.table_frame.update_idletasks()
         self.canvas.configure(scrollregion=self.canvas.bbox('all'))
 
